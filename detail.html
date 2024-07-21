@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Details</title>
+    <link rel="stylesheet" href="css/detail.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="js/detail.js" defer></script>
+</head>
+
+<body>
+    <div class="header">
+        <h1 style="font-size: 80px;">Plant |</h1>
+        <h2 style="padding-top:2%;"><span id="headerPlantName"></span></h2>
+    </div>
+    <div class="container"><button class="btn-back" onclick="goBack()">Back</button>
+        <div class="product-detail">
+            <img id="image" src="" alt="Plant Image">
+            <div class="product-info">
+                <h2 id="plantName"></h2>
+                <p id="plantPrice"></p>
+                <p id="plantDescription">With light green-striped leaves, the <span id="descriptionPlantName"></span> is
+                    a decorative and unique houseplant.</p>
+                <div class="size-selection">
+                    <label>Select size:</label>
+                    <div class="size-options">
+                        <div class="size-box" onclick="selectSize('S')">Small</div>
+                        <div class="size-box" onclick="selectSize('M')">Medium</div>
+                        <div class="size-box" onclick="selectSize('L')">Large</div>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button class="btn" onclick="addToCart()">Add to Cart</button>
+                    <div class="counter">
+                        <button class="counter-btn" onclick="decrement()">-</button>
+                        <span id="count">1</span>
+                        <button class="counter-btn" onclick="increment()">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="info-sections">
+            <div class="plant-care">
+                <h3>Plant Care Steps</h3>
+                <ul>
+                    <li>Water your plant regularly.</li>
+                    <li>Place it in an area with indirect sunlight.</li>
+                    <li>Use the appropriate soil mix.</li>
+                    <li>Fertilize once a month.</li>
+                    <li>Prune dead leaves and branches.</li>
+                </ul>
+            </div>
+            <div class="shipping-details">
+                <h3>Shipping Details</h3>
+                <p>We offer fast and secure shipping worldwide. Delivery time varies depending on location, typically
+                    between 3-7 business days.</p>
+            </div>
+            <div class="refund-policy">
+                <h3>Refund Policy</h3>
+                <p>If you're not satisfied with your purchase, you can return it within 30 days for a full refund.
+                    Please ensure the plant is in its original condition.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

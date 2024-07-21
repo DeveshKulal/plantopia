@@ -1,0 +1,240 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+}
+
+.header {
+    width: 100%;
+    padding: 20px;
+    background-color: #E8EDDE;
+    color: black;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.product-detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+img#image {
+    max-width: 300px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+.product-info h2 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.product-info p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.size-selection {
+    margin: 10px 0;
+}
+
+.size-selection label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.size-options {
+    display: flex;
+    gap: 10px;
+}
+
+.size-box {
+    padding: 10px 20px;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    color: #4CAF50;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.size-box:hover,
+.size-box.selected {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    background-color: #45A049;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+}
+
+.counter-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.counter-btn:hover {
+    background-color: #45A049;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#count {
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.info-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.info-sections>div {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-sections h3 {
+    margin-top: 0;
+}
+
+.info-sections ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info-sections li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.shipping-details,
+.refund-policy {
+    background-color: #E8EDDE;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.size-options {
+    display: flex;
+    gap: 10px;
+}
+
+.size-box {
+    padding: 10px 20px;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    color: #4CAF50;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+}
+
+.size-box:hover,
+.size-box.selected {
+    background-color: #4CAF50;
+    color: white;
+}
+#plantPrice::before {
+    content: '\20B9';
+}
+.btn-back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    /* Ensure consistent font */
+    font-weight: 500;
+    /* Adjust font weight as needed */
+    text-transform: uppercase;
+    /* Optionally make text uppercase */
+    transition: background-color 0.3s, color 0.3s;
+    /* Smooth transition on hover */
+}
+
+.btn-back:hover {
+    background-color: black;
+    /* Darker shade on hover */
+}
