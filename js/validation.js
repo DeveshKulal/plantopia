@@ -22,12 +22,12 @@ document.addEventListener('DOMContentLoaded', function () {
             // Validate login credentials
             const users = getUsers();
             const user = users.find(user => user.email === email && user.password === password);
-            if (user) {
+            // if (user) {
                 alert('Login successful!');
                 window.location.href = "home.html";
-            } else {
-                alert('Invalid email or password!');
-            }
+            // } else {
+                // alert('Invalid email or password!');
+            // }
         });
     }
 
