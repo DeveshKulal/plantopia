@@ -68,6 +68,7 @@ html {
 
 .header-1 {
     border-bottom: .1rem solid rgba(187, 184, 184, 0.379);
+    
 }
 
 .header-1 span {
@@ -85,8 +86,16 @@ html {
 .header-1 a:hover {
     color: black;
 }
+.header-2{
+    background-image: url('../images/banner.png');
+        height: 350px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
 
 .header-2 .logo {
+    margin-top: 20%;
     font-weight: bolder;
     font-size: 2.5rem;
     color: #fff;
@@ -102,10 +111,12 @@ html {
 .header-2 .serach-bar-container {
     display: flex;
     align-items: center;
-    width: 50rem;
+    width: 40rem;
+    height: 4rem;
     padding: 1.5rem;
     background: rgba(255, 255, 255, .2);
     border-radius: .5rem;
+    margin-top: 9%;
 }
 
 .header-2 .serach-bar-container #search-bar {
@@ -182,7 +193,20 @@ html {
     color: var(--green);
 }
 
-
+.lbtn{
+    display: inline-block;
+        margin-top: 1rem;
+        padding: .9rem 3rem;
+        background: white;
+        color: black;
+        font-size: 1.7rem;
+        border-radius: 2px;
+        cursor: pointer;
+}
+.lbtn:hover{
+    background-color: black;
+    border-radius: 25px;
+}
 /*login*/
 
 .login-form-container {
